@@ -16,6 +16,12 @@ public class CardTrick {
     {
         Card[] magicHand = new Card[7];
         
+        Card luckyCard = new Card();
+        luckyCard.setValue(9);
+        luckyCard.setSuit("Diamonds");
+        
+        System.out.println ("The lucky card is: " + luckyCard.getValue() + " of " + luckyCard.getSuit());
+        
         int randomNum;
         
         Scanner in= new Scanner(System.in);

@@ -35,17 +35,14 @@ public class CardTrick {
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
         Card luckyCard = new Card();
-        luckyCard.setvalue(3);
-        luckyCard.setSuit(3);
+        luckyCard.setValue(3);
+        luckyCard.setSuit("Diamond");
 
-System.out.println("Pick a card any card: ");
-System.out.println("Choose a number between 1-13 and a suit (diamond, heart, spade, club");
-int cardValue = input.nextInt();
-String cardSuit = input.next(); 
+System.out.println("Your card is " + luckyCard.getValue() + " of " + luckyCard.getSuit());
 
 boolean test = false;
 for (int i=0; i<magicHand.length; i++)
-        { if (cardValue == magicHand[i].getValue() && cardSuit.equals(magicHand[i].getSuit()))
+        { if (luckyCard.getValue() == magicHand[i].getValue() && luckyCard.getSuit().equals(magicHand[i].getSuit()))
         test = true;
         } 
 if (test == true){

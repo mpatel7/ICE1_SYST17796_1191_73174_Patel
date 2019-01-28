@@ -16,6 +16,8 @@ import java.util.Scanner;
 public class CardTrick {
     
     private Random gen = new Random();
+    
+    MyCard luckyCard = new MyCard("SPADE", 10);
 
     
     public static void main(String[] args){

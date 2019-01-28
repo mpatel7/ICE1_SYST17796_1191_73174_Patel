@@ -39,7 +39,7 @@ public class CardTrick {
 
         int count = 0;
         for(int j = 0; j < magicHand.length; j++){
-            if(magicHand[j].getValue() == cardValue && magicHand[j].getSuit().equalsIgnoreCase(suitValue)){
+            if(luckyCard.getValue() == cardValue && luckyCard.getSuit().equalsIgnoreCase(suitValue)){
                 count++;
             } 
         }

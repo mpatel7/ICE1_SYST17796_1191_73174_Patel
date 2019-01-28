@@ -5,6 +5,9 @@
  */
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects
  * and then asks the user to pick a card and searches the array of cards
@@ -16,8 +19,11 @@ public class CardTrick {
     public static void main(String[] args)
     {
         Card[] magicHand = new Card[7];
+        magicHand[0].setSuit("Diamonds");
+        magicHand[0].setValue(4);
         
-        for (int i=0; i<magicHand.length; i++)
+        
+        for (int i=1; i<magicHand.length; i++)
         {
             Card c = new Card();
             //c.setValue(insert call to random number generator here)

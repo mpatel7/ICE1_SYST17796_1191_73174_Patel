@@ -57,6 +57,6 @@ public class CardTrick {
             } else {
                 System.out.println("Sorry the card you guessed was not inside the deck");
             }
-    }
+    }//
     
 }

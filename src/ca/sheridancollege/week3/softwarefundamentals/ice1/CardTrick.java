@@ -6,7 +6,7 @@
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
 import java.util.Arrays;
 import java.util.Random;
-import java.util.Scanner;
+//import java.util.Scanner;
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects
  * and then asks the user to pick a card and searches the array of cards
@@ -20,7 +20,7 @@ public class CardTrick {
     {
         Card[] magicHand = new Card[7];
         int[][] doneCards = new int[7][2];
-        Scanner input = new Scanner(System.in);
+        //Scanner input = new Scanner(System.in);
         Card luckyCard = new Card();
         
         luckyCard.setValue(10);
@@ -43,18 +43,19 @@ public class CardTrick {
             c.setValue(value);
             
             magicHand[i] = c;
-            
-            System.out.println(Arrays.toString(doneCards[i]));
         }
         
-        System.out.println("Tell me your card suit (String) and value (int)");
-        String cardSuit = input.next();
-        int cardValue = input.nextInt();
+        System.out.println("Your Lucky Card Was Selected!");
+        //String cardSuit = input.next();
+        //int cardValue = input.nextInt();
+        String cardSuit = luckyCard.getSuit();
+        int cardValue = luckyCard.getValue();
         
         Card magicCard = new Card();
         magicCard.setSuit(cardSuit);
         magicCard.setValue(cardValue);
         
+        /*
         boolean cardExists = false;
         for (Card c: magicHand){
             if (c.getSuit().equals(magicCard.getSuit()) && c.getValue() == magicCard.getValue()){
@@ -67,6 +68,9 @@ public class CardTrick {
         else {
             System.out.println("I couldn't find your card");
         }
+        */
+        
+        System.out.printf("%d of %s\n",magicCard.getValue(), magicCard.getSuit());
     }
     
     private static boolean arrayContains (int[][] array, int suit, int value){

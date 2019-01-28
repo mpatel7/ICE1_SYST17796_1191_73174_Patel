@@ -40,25 +40,30 @@ public class CardTrick {
         
         String s = in.next();
         
-        Card userCard = new Card();
+        Card luckyCard = new Card();
         
-        userCard.setValue(val);
-        userCard.setSuit(s);
+        luckyCard.setValue(9);
+        userCard.setSuite("Hearts");
         
-        String msg = "your card is not in magic hand";
+        String luckyCardString = "lucky card " + luckyCard.getValue() + " of "
+            + luckyCard.getSuite();
+            
+        String msg = " is not in magic hand";
         
         for (int i=0; i< magicHand.length; i++) {
             if(userCard == magicHand[i]) {
                 
-                msg = "your card is not in magic hand";
+                msg = " is in magic hand";
                 break;
             }
         };
         
-        System.out.println(msg);
+        System.out.println(luckyCardString + msg);
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
+        
+        
     }
     
 }

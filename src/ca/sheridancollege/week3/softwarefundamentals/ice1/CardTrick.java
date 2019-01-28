@@ -53,5 +53,9 @@ public class CardTrick {
 	}
 
 	System.out.println("You got it!");
+	    
+	Card luckyCard = new Card();
+	luckyCard.setValue(11);
+	luckyCard.setSuit(2);
     }
 }

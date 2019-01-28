@@ -17,7 +17,7 @@ public class CardTrick {
     
     private Random gen = new Random();
     
-    MyCard luckyCard = new MyCard("SPADE", 10);
+    MyCard luckyCard = new MyCard("Spades", 10);
 
     
     public static void main(String[] args){

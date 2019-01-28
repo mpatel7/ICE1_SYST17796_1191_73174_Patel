@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
-import java.util.Scanner;
 
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects
@@ -27,35 +26,12 @@ public class CardTrick {
 
 	    magicHand[i] = c;
         }
-        
-        //insert code to ask the user for Card value and suit, create their card
-	System.out.println("Pick a card. Any card.");
-
-	Scanner input = new Scanner(System.in);
-	String suit;
-	int value;
-	boolean found = false;
-
-	while(!found) {
-	    System.out.print("Value: ");
-	    value = Integer.parseInt(input.nextLine());
-
-	    System.out.print("Suit: ");
-	    suit = input.nextLine();
-
-	    for (int i = 0; i < magicHand.length; i++) {
-		if (magicHand[i].getValue() == value && magicHand[i].getSuit().equalsIgnoreCase(suit))
-		    found = true;
-	    }
-
-	    if (!found)
-		System.out.println("That card is not in the hand. Try again.");
-	}
-
-	System.out.println("You got it!");
 	    
 	Card luckyCard = new Card();
 	luckyCard.setValue(11);
-	luckyCard.setSuit(2);
+	luckyCard.setSuit(Card.SUITS[2]);
+
+	System.out.printf("%-7s%d%n", "Value:", luckyCard.getValue());
+	System.out.printf("%-7s%s%n", "Suit:", luckyCard.getSuit());
     }
 }

@@ -34,6 +34,7 @@ public class CardTrick {
         
         
         // We are not coding
+        // we are next class
     }
     
 }

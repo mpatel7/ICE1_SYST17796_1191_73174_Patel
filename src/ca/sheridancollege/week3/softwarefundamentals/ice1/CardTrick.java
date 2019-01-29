@@ -17,6 +17,10 @@ public class CardTrick {
     // Edited by Mahmoud Mohamed
     public static void main(String[] args)
     {
+        Card luckyCard = new Card();
+        luckyCard.number = 4;
+        luckyCard.suit = heart;
+        
         Card[] magicHand = new Card[7];
         
         for (int i=0; i<magicHand.length; i++)
@@ -32,11 +36,4 @@ public class CardTrick {
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
-        
-        Scanner input = new Scanner (System.in);
-        int cardValue = input.nextInt();
-        String cardsuit = input.nextLine();
-        System.out.println("Please insert a number from 1-13");
-    }
-    
-}
+  

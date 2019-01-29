@@ -34,10 +34,10 @@ public class CardTrick {
         Card luckyCard = new Card();
         
         luckyCard.setValue(9);
-        userCard.setSuite("Hearts");
+        luckyCard.setSuit("Hearts");
         
         String luckyCardString = "lucky card " + luckyCard.getValue() + " of "
-            + luckyCard.getSuite();
+            + luckyCard.getSuit();
             
         String msg = " is not in magic hand";
         

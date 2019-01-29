@@ -30,13 +30,14 @@ public class CardTrick {
             c.setSuit(Card.SUITS[(int) (Math.random()*4) ]);
         }
         
+        
         Card luckyCard = new Card();
         
         luckyCard.setValue(9);
-        luckyCard.setSuit("Hearts");
+        userCard.setSuite("Hearts");
         
         String luckyCardString = "lucky card " + luckyCard.getValue() + " of "
-            + luckyCard.getSuit();
+            + luckyCard.getSuite();
             
         String msg = " is not in magic hand";
         

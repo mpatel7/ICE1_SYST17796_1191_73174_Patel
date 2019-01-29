@@ -42,5 +42,5 @@ public class CardTrick {
         String cardSuit = input.nextLine();
         
     }
-    
+    //Step 6 hard code editing
 }

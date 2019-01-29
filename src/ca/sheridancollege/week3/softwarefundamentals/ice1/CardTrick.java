@@ -33,8 +33,7 @@ public class CardTrick {
         //Then report the result here
         
         
-        // We are not coding
-        // we are next class
+    
     }
     
 }

@@ -19,6 +19,9 @@ public class CardTrick {
     {
         Scanner in = new Scanner(System.in);
         Card[] magicHand = new Card[7];
+        Card luckyCard = new Card();
+        luckyCard.setValue(1);
+        luckyCard.setSuit(Card.SUIT[0]);
         int rdmValues;
         int rdmSuits;
         
@@ -54,8 +57,9 @@ public class CardTrick {
         String suit = in.next();
         
         for(int i = 0; i < magicHand.length; i++){
-            if(cardVal == magicHand[i].getValue() && suit.toLowerCase().equals(magicHand[i].getSuit().toLowerCase())){
-                System.out.print("\nCARDS MATCH!");
+            if(luckyCard.getValue() == magicHand[i].getValue() && luckyCard.getSuit().toLowerCase().equals(magicHand[i].getSuit().toLowerCase())){
+                System.out.println("\nCARDS MATCH!");
+                System.out.print(String.format("The matching card is: %d of %s", magicHand[i].getValue(), magicHand[i].getSuit()));
                 break;
             }
         }

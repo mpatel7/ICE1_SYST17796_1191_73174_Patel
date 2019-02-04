@@ -32,6 +32,7 @@ public class CardTrick {
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
             c.setSuit(Card.SUITS[(int)(Math.random() * 4 )]);
         }
+        //comment 1
         
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
